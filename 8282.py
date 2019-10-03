@@ -6,7 +6,8 @@ import datetime
 import os
 
 app = discord.Client()
-token = "NjI5MjQ0MTg4MjMxNDY3MDA5.XZW9dA.-xB1DvPHqCF9K6vV3M1YJjKAbjA"
+access_token = os.environ["BOT_TOKEN"]
+token = access_token = os.environ["BOT_TOKEN"]
 
 @app.event
 async def on_ready():
@@ -76,5 +77,5 @@ async def on_message(message):
 
         
 
-
-app.run(token)
+access_token = os.environ["BOT_TOKEN"]
+app.run(access_token)
