@@ -1,7 +1,1 @@
-discord.py==3.6.7
-asyncio.py==3.6.7
-discord.py==3.6.7
-time.py==3.6.7
-random.py==3.6.7
-datetime.py==3.6.7
-os.py==3.6.7
+discord.py==0.16.12
