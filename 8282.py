@@ -6,7 +6,7 @@ import datetime
 import os
 
 app = discord.Client()
-token = "BOT_TOKEN"
+token = os.environ["BOT_TOKEN"]
 
 @app.event
 async def on_ready():
