@@ -3,6 +3,7 @@ import random
 import os
 
 app = discord.Client()
+token = os.environ["BOT_TOKEN"]
 
 @app.event
 async def on_ready():
@@ -86,5 +87,5 @@ async def on_message(message):
         embed.set_footer(text = "#존예#여신#우리들의 딸기#풍자#츄츄펜") #embed에 푸터 추가
         embed.set_image(url="https://i.imgur.com/itMEXHt.gif") #embed에 이미지 추가
         await message.channel.send(embed=embed) #embed전송
-token = os.environ["BOT_TOKEN"]       
+    
 app.run(token)
